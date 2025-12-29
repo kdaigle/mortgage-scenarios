@@ -21,4 +21,4 @@ EXPOSE 8080
 COPY --from=build /app/dist /srv/http
 
 # Bind to 0.0.0.0 so Fly can reach it
-CMD ["-port", "8080", "-host", "0.0.0.0", "-enable-logging"]
+CMD ["-port", "8080", "-enable-logging"]
